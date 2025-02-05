@@ -1,0 +1,188 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+    margin: 0; 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
+.fade-in {
+    opacity: 0; 
+    animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1; 
+    }
+}
+
+.main-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2rem; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px; 
+}
+
+.welcome-section {
+    text-align: center; 
+    margin-bottom: 1rem; 
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 1rem; 
+    color: darkgray;
+}
+
+form {
+    display: flex;
+    flex-direction: column; 
+}
+
+label {
+    margin-bottom: 0.5rem; 
+    color: darkgray;
+}
+
+input, select {
+    margin-bottom: 1rem; 
+    padding: 0.5rem;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+}
+
+button {
+    background-color: darkslategray;
+    color: white;
+    border: none; 
+    padding: 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;  
+}
+
+button:hover {
+    background-color: darkslategray;
+}
+
+.toggle {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.toggle a {
+    color: darkslategray;
+    text-decoration: none;
+}
+
+.toggle a:hover {
+    text-decoration: underline;
+}
+
+.error {
+    color: red; 
+    font-size: 0.8rem;
+    margin-top: -0.5rem; 
+    margin-bottom: 0.5rem; 
+}
+
+.gender-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.gender-group label {
+    display: flex;
+    align-items: center; 
+}
+
+.gender-group input[type="radio"] {
+    margin-right: 0.5rem; 
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.remember-forgot label {
+    display: flex;
+    align-items: center; 
+    margin: 0; 
+}
+
+.remember-forgot input[type="checkbox"] {
+    margin-right: 0.5rem; 
+    margin-top: 0; 
+    margin-bottom: 0; 
+}
+
+.forgot-password {
+    color: darkslategray;
+    text-decoration: none;
+    font-size: 0.9rem; 
+}
+
+.forgot-password:hover {
+    text-decoration: underline; 
+}
+
+.remember-me {
+    display: flex; 
+    align-items: center; 
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        width: 80%; 
+        padding: 1.5rem; 
+    }
+
+    h1, h2 {
+        font-size: 1.5rem; 
+    }
+
+    form label {
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-container {
+        width: 90%; 
+        padding: 1rem;
+    }
+
+    h1, h2 {
+        font-size: 1.2rem; 
+    }
+
+    input, button {
+        font-size: 0.9rem; 
+        padding: 0.4rem;
+    }
+
+    .remember-forgot {
+        flex-direction: column; 
+        align-items: flex-start;
+    }
+
+    .forgot-password {
+        margin-top: 0.5rem; 
+        font-size: 0.8rem;
+    }
+}

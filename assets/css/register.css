@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;
+    margin: 0;
+    background-image: url('../asset/images/FoodBackground.jpg'); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards; 
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.main-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px; 
+    text-align: center; 
+}
+
+h1, h2 {
+    color: darkgray; 
+    margin-bottom: 10px; 
+}
+
+form {
+    display: flex;
+    flex-direction: column; 
+    text-align: left;
+}
+
+label {
+    margin-bottom: 5px;
+    color: darkgray;
+}
+
+input {
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 1px solid lightgray;
+    border-radius: 5px; 
+    color: black; 
+}
+
+.name-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; 
+    margin-bottom: 15px;
+}
+
+.name-item {
+    flex: 1; 
+}
+
+button {
+    background-color: darkslategray;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+ 
+button:hover {
+    background-color: darkslategray; 
+    color: white; 
+}
+
+.toggle {
+    margin-top: 10px; 
+}
+
+.toggle a {
+    color: darkslategray;
+    text-decoration: none; 
+}
+
+.toggle a:hover {
+    text-decoration: underline; 
+}
+
+.error {
+    color: red; 
+    font-size: 0.9em;
+}
+
+.success-message {
+    color: green; 
+    margin-top: 15px;
+    font-size: 1em;
+}
+
+@media (max-width: 480px) {
+    .main-container {
+        width: 90%; 
+    }
+}

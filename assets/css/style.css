@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightgray;
+    color: darkslategray;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: darkslategray; 
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-bar ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-bar ul li a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.hero {
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9; 
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero .content h4,
+.hero .content h1,
+.hero .content h3 {
+    font-size: 2.5vw; 
+}
+
+.hero .button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: darkslategray; 
+    border-radius: 30px;
+    font-size: 2vw; 
+    transition: background-color 0.3s, transform 0.3s; 
+}
+
+.hero .button a {
+    color: white; 
+    text-decoration: none; 
+}
+
+.hero .button:hover {
+    background-color: lightgray; 
+    transform: scale(1.05); 
+}
+
+.hero .button:hover a {
+    color: darkslategray; 
+}
+
+.about {
+    padding: 60px 5%; 
+    background-color: lavender; 
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 3rem; 
+    font-weight: bold;
+    margin-bottom: 20px; 
+    color: darkslategray; 
+}
+
+.about-main {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.about-image {
+    width: 50%; 
+    max-width: 500px; 
+    height: auto; 
+    margin-right: 20px; 
+}
+
+.about-text {
+    max-width: 600px; 
+    text-align: left; 
+    font-size: 1.6rem; 
+    color: darkslategray; 
+}
+
+footer {
+    padding: 20px;
+    background-color: darkslategray; 
+    color: white;
+    text-align: center;
+}
+
+footer .social-icons {
+    margin-bottom: 10px;
+}
+
+footer .icons span {
+    margin: 0 10px;
+    font-size: 14px;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nav-bar ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .nav-bar ul li a {
+        margin: 10px 0;
+    }
+
+    .hero {
+        height: 50vh;
+    }
+
+    .hero .content h1 {
+        font-size: 4vw;
+    }
+
+    .hero .button {
+        font-size: 3vw;
+        padding: 10px;
+    }
+
+    .about-main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image {
+        width: 80%; 
+        margin: 20px 0;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero .content h1 {
+        font-size: 5vw;
+    }
+
+    .about h2 {
+        font-size: 2.5rem;
+    }
+
+    .about-text {
+        font-size: 1rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
